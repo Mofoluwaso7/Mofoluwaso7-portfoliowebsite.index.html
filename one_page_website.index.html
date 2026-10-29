@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The portfolio of Mofoluwaso, showcasing web development projects and learning.">
+    <title>Mofoluwaso | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="stylesheet/portfolio.css">
+    <script src="JS/one_page_website.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Main navigation">
+            <a class="wordmark" href="#home" aria-label="Mofoluwaso, home">M<span>.</span></a>
+            <div class="navigation-links">
+                <a href="#about">About</a>
+                <a href="#gallery">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Learning, building, improving</p>
+                <h1>Hello, I’m <span>Mofoluwaso.</span></h1>
+                <p class="hero-intro">
+                    I’m learning web development and building thoughtful, interactive experiences
+                    with HTML, CSS, and JavaScript.
+                </p>
+                <a class="button-link" href="#gallery">Explore my projects <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-mark" aria-hidden="true">
+                <span>&lt;</span><span class="mark-accent">/</span><span>&gt;</span>
+            </div>
+        </section>
+
+        <section class="about section-block" id="about">
+            <div class="container about-layout">
+                <div>
+                    <p class="eyebrow">A little about me</p>
+                    <h2>Curious by nature.<br>Building one page at a time.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>
+                        I enjoy learning how websites work and turning that knowledge into projects
+                        I can share. This portfolio brings together my practice with page structure,
+                        styling, and JavaScript interactions.
+                    </p>
+                    <ul class="skill-list" aria-label="Technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section-block container" id="gallery">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Selected practice</p>
+                    <h2>Projects</h2>
+                </div>
+                <p>Small projects that help me learn by making.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=700&auto=format&fit=crop&q=80"
+                        data-large-src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1600&auto=format&fit=crop&q=85"
+                        alt="Cat looking toward the camera"
+                        loading="lazy">
+                    <div class="project-copy">
+                        <p class="project-number">01 / Web design</p>
+                        <h3>One-page website</h3>
+                        <p>A responsive page bringing navigation, content, and contact details together.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=700&auto=format&fit=crop&q=80"
+                        data-large-src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1600&auto=format&fit=crop&q=85"
+                        alt="Lion resting outdoors"
+                        loading="lazy">
+                    <div class="project-copy">
+                        <p class="project-number">02 / JavaScript</p>
+                        <h3>Interactive image viewer</h3>
+                        <p>A keyboard-friendly gallery with next, previous, and close controls.</p>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-video">
+                    <video controls playsinline preload="metadata" aria-label="Animal image slideshow project">
+                        <source src="Videos/animal_slideshow.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="project-copy">
+                        <p class="project-number">03 / HTML video</p>
+                        <h3>Animal slideshow</h3>
+                        <p>A video feature included as part of this website project.</p>
+                    </div>
+                </article>
+            </div>
+            <p class="image-credit">
+                The crocodile photo used in the slideshow is by
+                <a href="https://commons.wikimedia.org/wiki/File:Crocodile_portrait,_Dubai_Crocodile_Park,_UAE.jpg">Tashmetova808</a>
+                and is licensed under
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+            </p>
+        </section>
+
+        <section class="contact section-block" id="contact">
+            <div class="container contact-layout">
+                <div>
+                    <p class="eyebrow">Let’s connect</p>
+                    <h2>Have a question<br>or an idea?</h2>
+                    <p class="contact-email"><a href="mailto:drfoluso@yahoo.com">drfoluso@yahoo.com</a></p>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" value="MOFOLUWASO" autocomplete="name" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" value="drfoluso@yahoo.com" autocomplete="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required>my one page website</textarea>
+
+                    <button class="button-link" type="submit">Send a message <span aria-hidden="true">↗</span></button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>Designed and built by Mofoluwaso.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Project image viewer" hidden>
+        <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+        <button class="lightbox-previous" type="button" aria-label="Previous image">&lsaquo;</button>
+        <figure class="lightbox-figure">
+            <img class="lightbox-image" alt="">
+            <figcaption class="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-next" type="button" aria-label="Next image">&rsaquo;</button>
+    </div>
+</body>
+</html>
